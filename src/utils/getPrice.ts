@@ -40,7 +40,7 @@ const getPrice = async () => {
 
         await browser.close();
 
-        const USER_TO = "novqigarrixdev@gmail.com";
+        const USER_TO = process.env.EMAIL_TO!
 
         if (price <= 95) {
             console.info(`PRICE IS GOING DOWN!!!`);
